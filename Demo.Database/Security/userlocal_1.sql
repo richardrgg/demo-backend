@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [userlocal]
+    WITH PASSWORD = N'u`IoscvvaZorjawworDc{|ssmsFT7_&#$!~<bgvxypeeV{v5', SID = 0x8C827055905F4F4DBD425F4152B998B7, DEFAULT_DATABASE = [DemoDB], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

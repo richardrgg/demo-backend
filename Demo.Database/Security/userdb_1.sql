@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [userdb]
+    WITH PASSWORD = N'6toTD~sc,v#mvaoWrja^wjwomsFT7_&#$!~<rc{|s{bgvJVx', SID = 0x6313B880216D4042B6382C47B5AA897E, DEFAULT_DATABASE = [DemoDB], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

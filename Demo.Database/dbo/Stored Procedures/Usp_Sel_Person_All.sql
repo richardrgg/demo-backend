@@ -1,0 +1,15 @@
+﻿ CREATE PROC [dbo].[Usp_Sel_Person_All]
+ AS
+ BEGIN
+
+	SELECT 
+		P.Id,
+		P.Name,
+		P.Lastname,
+		P.Birthdate,
+		P.DocumentNumber,
+		DT.ShortName AS DocumentType
+	FROM [dbo].[Person] P
+	INNER JOIN [dbo].[DocumentType] DT ON DT.Id = P.DocumentTypeId
+
+ END
