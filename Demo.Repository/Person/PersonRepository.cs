@@ -22,7 +22,6 @@ namespace Demo.Repository.Person
             parameters.Add("@Lastname", person.Lastname);
             parameters.Add("@DocumentNumber", person.DocumentNumber);
             parameters.Add("@DocumentTypeId", person.DocumentTypeId);
-            parameters.Add("@Birthdate", Convert.ToDateTime(person.BirthDate));
 
             using (var connection = new SqlConnection(_connectionString))
             {
@@ -55,7 +54,6 @@ namespace Demo.Repository.Person
             parameters.Add("@Lastname", person.Lastname);
             parameters.Add("@DocumentNumber", person.DocumentNumber);
             parameters.Add("@DocumentTypeId", person.DocumentTypeId);
-            parameters.Add("@Birthdate", Convert.ToDateTime(person.BirthDate));
 
             using (var connection = new SqlConnection(_connectionString))
             {

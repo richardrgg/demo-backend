@@ -7,6 +7,5 @@
         public string Lastname { get; set; }
         public string DocumentNumber { get; set; }
         public int DocumentTypeId { get; set; }
-        public string BirthDate { get; set; }
     }
 }

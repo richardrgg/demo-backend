@@ -6,7 +6,6 @@
 		P.Id,
 		P.Name,
 		P.Lastname,
-		P.Birthdate,
 		P.DocumentNumber,
 		DT.ShortName AS DocumentType
 	FROM [dbo].[Person] P

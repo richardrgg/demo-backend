@@ -3,8 +3,7 @@
   @Name VARCHAR(50),
   @Lastname VARCHAR(50),
   @DocumentNumber VARCHAR(20),
-  @DocumentTypeId INT,
-  @Birthdate DATE)
+  @DocumentTypeId INT)
  AS
  BEGIN
 
@@ -12,8 +11,7 @@
 		Name = @Name,
 		Lastname = @Lastname,
 		DocumentNumber = @DocumentNumber,
-		DocumentTypeId = @DocumentTypeId,
-		Birthdate = @Birthdate
+		DocumentTypeId = @DocumentTypeId
 	WHERE Id = @Id
 
  END
