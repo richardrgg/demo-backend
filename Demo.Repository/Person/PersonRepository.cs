@@ -22,6 +22,7 @@ namespace Demo.Repository.Person
             parameters.Add("@Lastname", person.Lastname);
             parameters.Add("@DocumentNumber", person.DocumentNumber);
             parameters.Add("@DocumentTypeId", person.DocumentTypeId);
+            parameters.Add("@Birthday", person.Birthday);
 
             using (var connection = new SqlConnection(_connectionString))
             {
@@ -54,6 +55,7 @@ namespace Demo.Repository.Person
             parameters.Add("@Lastname", person.Lastname);
             parameters.Add("@DocumentNumber", person.DocumentNumber);
             parameters.Add("@DocumentTypeId", person.DocumentTypeId);
+            parameters.Add("@Birthday", person.Birthday);
 
             using (var connection = new SqlConnection(_connectionString))
             {

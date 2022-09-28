@@ -10,6 +10,6 @@ namespace Demo.Queries.Person
     public interface IPersonQueries
     {
         Task<PersonByIdViewModel> GetById(int id);
-        Task<IEnumerable<PersonByIdViewModel>> GetAll();
+        Task<IEnumerable<PersonViewModel>> GetAll();
     }
 }

@@ -5,7 +5,8 @@
 	SELECT
 		Id,
 		Name,
-		Lastname
+		Lastname,
+		Birthday
 	FROM [dbo].[Person]
 
  END

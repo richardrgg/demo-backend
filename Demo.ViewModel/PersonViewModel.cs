@@ -6,6 +6,8 @@
         public string Name { get; set; }
         public string Lastname { get; set; }
         public string DocumentType { get; set; }
+        public string DocumentNumber { get; set; }
+        public DateTime Birthday { get; set; }
     }
 
     public class PersonByIdViewModel
@@ -15,5 +17,6 @@
         public string Lastname { get; set; }
         public string DocumentNumber { get; set; }
         public int DocumentTypeId { get; set; }
+        public DateTime Birthday { get; set; }
     }
 }

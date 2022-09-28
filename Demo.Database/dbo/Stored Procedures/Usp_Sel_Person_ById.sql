@@ -8,7 +8,8 @@
 		Name,
 		Lastname,
 		DocumentNumber,
-		DocumentTypeId
+		DocumentTypeId,
+		Birthday
 	FROM [dbo].[Person]
 	WHERE Id = @Id
 

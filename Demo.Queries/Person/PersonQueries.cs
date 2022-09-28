@@ -20,13 +20,13 @@ namespace Demo.Queries.Person
             _connectionString = configuration["ConnectionStrings:SQL"];
         }
 
-        public async Task<IEnumerable<PersonByIdViewModel>> GetAll()
+        public async Task<IEnumerable<PersonViewModel>> GetAll()
         {
-            IEnumerable<PersonByIdViewModel> result = new List<PersonByIdViewModel>();
+            IEnumerable<PersonViewModel> result = new List<PersonViewModel>();
 
             using (var connection = new SqlConnection(_connectionString))
             {
-                result = await connection.QueryAsync<PersonByIdViewModel>("[dbo].[Usp_Sel_Person_All]", commandType: CommandType.StoredProcedure);
+                result = await connection.QueryAsync<PersonViewModel>("[dbo].[Usp_Sel_Person_All]", commandType: CommandType.StoredProcedure);
             }
 
             return result;
